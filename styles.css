@@ -1,0 +1,18 @@
+/* Add a logo to all slides */
+.remark-slide-content {
+  position: relative;
+}
+
+.remark-slide-content::before {
+  content: "";
+  position: absolute;
+  top: 10px; /* Adjust the position */
+  left: 10px;
+  width: 100px; /* Adjust size */
+  height: 100px; /* Adjust height if needed */
+  background-image: url("file:///C:/Users/ENDRI/Dropbox/Work/Office365Training/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
